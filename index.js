@@ -53,7 +53,7 @@ app.get('/:id([0-9]+)', nocache(), (req, res, next) => {
 });
 
 app.get('/', function (req, res) {
-    res.render('index', { services: config.services});
+    res.render('index', { title: config.title, services: config.services});
 });
 
 app.listen(config.port, function () {

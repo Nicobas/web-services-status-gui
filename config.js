@@ -1,4 +1,5 @@
 module.exports = {
+    title: 'WEB SERVICES STATUS GUI',
     port: 3000,
     http_timeout: 10, // seconds
     ping_timeout: 10,
@@ -10,7 +11,7 @@ module.exports = {
             services: [
                 {
                     type: 'http',
-                    host: 'https://skeelappa.com',
+                    host: 'https://skeelapp.com',
                     name: 'Skeel web site',
                     // services: [...]
                 }

@@ -1,8 +1,10 @@
 li.list-group-item
     b
-        | #{s.name} -
-    |  #{s.host} (#{s.type})
-    img.pull-right.image(src=s.id alt="status" width="20" height="20")
+        | #{s.name}
+    if s.type !== 'text'
+        |  - #{s.host} (#{s.type})
+    if s.type !== 'text'
+        img.pull-right.image(src=s.id alt="..." width="20" height="20")
     if s.services
         p
         +ul_item(s.services)
