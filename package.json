@@ -1,0 +1,35 @@
+{
+  "name": "web-service-status-gui",
+  "version": "1.0.0",
+  "description": "Node.js GUI to display the status of web services (http) and servers (ping)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicobas/web-services-status-gui.git"
+  },
+  "keywords": [
+    "gui",
+    "web",
+    "services",
+    "status",
+    "http",
+    "ping"
+  ],
+  "author": "Bastien NICOLAS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nicobas/web-services-status-gui/issues"
+  },
+  "homepage": "https://github.com/Nicobas/web-services-status-gui#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nocache": "^2.0.0",
+    "ping": "^0.2.2",
+    "pug": "^2.0.3",
+    "request": "^2.87.0"
+  }
+}
