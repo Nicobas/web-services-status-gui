@@ -5,10 +5,10 @@ module.exports = {
     ping_timeout: 10,
     services: [
         {
-            type: 'ping',
+            type: 'ping', // ping, http or text (only text without status)
             host: 'skeelapp.com', // or '8.8.8.8',
-            name: 'Skeel server',
-            services: [
+            name: 'Skeel server', // text displayed beside the status
+            services: [ // you can do service trees to infinity
                 {
                     type: 'http',
                     host: 'https://skeelapp.com',
